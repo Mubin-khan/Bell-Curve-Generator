@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMuinsTable extends Migration
+class CreateOpolsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateMuinsTable extends Migration
      */
     public function up()
     {
-        Schema::create('muins', function (Blueprint $table) {
+        Schema::create('opols', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('totall');
+            $table->integer('percentage');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateMuinsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('muins');
+        Schema::dropIfExists('opols');
     }
 }

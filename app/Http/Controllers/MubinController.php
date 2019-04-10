@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\opol;
 use App\Mubin;
 use Illuminate\Http\Request;
-use App\Http\Requests\StudentRequest;
+use App\Http\Requests\raju;
 
 class MubinController extends Controller
 {
@@ -16,7 +17,7 @@ class MubinController extends Controller
     public function index()
     {
         $students = Mubin::all();
-         return view('frontview.save.save',compact('students'));
+        return view('frontview.save.save',compact('students'));
     }
 
     /**
@@ -37,8 +38,9 @@ class MubinController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StudentRequest $request)
+    public function store(raju $request)
     {
+        
         $student = new Mubin();
         $student->registraion_num = $request->reg_num;   
         $student->marks = $request->mark;
@@ -46,6 +48,8 @@ class MubinController extends Controller
 
         return redirect()->back();
     }
+
+   
 
     /**
      * Display the specified resource.
@@ -101,5 +105,9 @@ class MubinController extends Controller
     }
     public function go(){
         return view('new');
+    }
+    public function sec(){
+        $std = opol::all();
+        return view('second1',compact('std'));
     }
 }
