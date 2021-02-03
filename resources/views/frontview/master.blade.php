@@ -130,7 +130,6 @@ http://www.tooplate.com/view/2085-neuron
                <div class="col-md-4 col-md-offset-1 col-sm-6">
                     <h3>Talk to us</h3>
                     <p><i class="fa fa-globe"></i> Sylhet Engineering College, Sylhet</p>
-                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
                     <p><i class="fa fa-envelope"></i> mubinkhan819@gmail.com</p>
                     <p><i class="fa fa-envelope"></i> muinahmed1234@gmail.com</p>
                </div>

@@ -75,12 +75,12 @@ http://www.tooplate.com/view/2085-neuron
 		<tr>
 			<td>Reg_No:</td>
 			<td><input type="text" name="reg_num" style="color: black"></td>
-			<td><h6 style="color: red">{{$errors->first('reg_num')}}</h6></td>
+			<td><h2 style="color: red">{{$errors->first('reg_num')}}</h2></td>
 		</tr>
 		<tr>
 			<td>Marks:</td>
 			<td><input type="text" name="mark" style="color: black"></td>
-			<td><h6 style="color: red">{{$errors->first('mark')}}</h6></td>
+			<td><h2 style="color: red">{{$errors->first('mark')}}</h2></td>
 		</tr>
 		
 		<tr>
@@ -118,7 +118,7 @@ http://www.tooplate.com/view/2085-neuron
 
 </table> <br>
 
-	<h5> It will show you natural of distribution of a bell curve with your result</h5>
+	<h5> It will show you natural distribution of a bell curve with your result</h5>
                     
                     <a href="{{ url('generate/save/go/') }}" class="smoothScroll btn btn-default">GENERATE NOW</a>
             		<h2><a href="{{ url('generate/save/clear/') }}" class="smoothScroll btn btn-default">Clear all</a></h2><br>

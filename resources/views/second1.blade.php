@@ -77,7 +77,7 @@ http://www.tooplate.com/view/2085-neuron
         <tr >
         <td> Percentage: </td>
         <td> <input style="color: black" type="text" name="percentage"></td>
-        <td><h6 style="color: red">{{$errors->first('percentage')}}</h6></td>
+        <td><h2 style="color: red">{{$errors->first('percentage')}}</h2></td>
     </tr>
         <tr>
             <td><input class="smoothScroll btn btn-default" type="submit" value="Submit"></td>
@@ -87,16 +87,20 @@ http://www.tooplate.com/view/2085-neuron
 
 </form>
 </div>
+<br>
+<br>
 <table BORDER=0 align="center">
     
     <tr>
         <th color = blue> ID </th>
+        <th> . . . . </th>
         <th> Percentage </th>
     </tr>
 
     @foreach($std as $st)
     <tr>
         <td>{{$st->id}}</td>
+        <th>  </th>
         <td>{{$st->percentage}}</td>
     </tr>
     @endforeach
@@ -130,7 +134,6 @@ http://www.tooplate.com/view/2085-neuron
                <div class="col-md-4 col-md-offset-1 col-sm-6">
                     <h3>Talk to us</h3>
                     <p><i class="fa fa-globe"></i> Sylhet Engineering College, Sylhet</p>
-                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
                     <p><i class="fa fa-envelope"></i> mubinkhan819@gmail.com</p>
                     <p><i class="fa fa-envelope"></i> muinahmed1234@gmail.com</p>
                </div>
